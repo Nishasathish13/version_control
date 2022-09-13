@@ -12,4 +12,5 @@ There are two main types of version control system models:
 
 -the centralized model - all users connect to a central, master repository
 
+
 -the distributed model - each user has the entire repository on their computer
