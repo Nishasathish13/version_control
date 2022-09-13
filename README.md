@@ -58,4 +58,40 @@ It is a 40-character string composed of characters (0–9 and a–f) and calcula
 
 A branch is when a new line of development is created that diverges from the main line of development. This alternative line of development can continue without altering the main line. The key thing that makes branches incredibly powerful is that you can make save points on one branch, and then switch to a different branch and make save points there, too.
 
+#### Installing Git
 
+To download Git:
+
+go to https://git-scm.com/downloads
+download the software for Windows
+install Git choosing all of the default options
+
+**First Time Git Configuration**
+
+We need to configure it. Run each of the following lines on the command line to make sure everything is set up.
+
+```
+#sets up Git with your name
+git config --global user.name "<Your-Full-Name>"
+
+#sets up Git with your email
+git config --global user.email "<your-email-address>"
+
+#makes sure that Git output is colored
+git config --global color.ui auto
+
+#displays the original state in a conflict
+git config --global merge.conflictstyle diff3
+
+git config --list
+  
+```
+#### Git & Code Editor
+
+The last step of configuration is to get Git working with editor.
+
+for VSCode:
+
+```
+git config --global core.editor "code --wait"
+```
