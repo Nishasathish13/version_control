@@ -8,11 +8,12 @@ The init subcommand is short for "initialize", which is helpful because it's the
 
 **Other useful commands:**
 
-ls - used to list files and directories
-mkdir - used to create a new directory
-cd - used to change directories
-rm - used to remove files and directories
-pwd - print working directory
+- ls - used to list files and directories
+- mkdir - used to create a new directory
+- cd - used to change directories
+- rm - used to remove files and directories
+- pwd - print working directory
+- - cd .. - move one folder down
 
 #### Create Course Directories
 
@@ -61,3 +62,24 @@ The git clone command is used to copy an existing repository into a folder in th
 
 The git status is key to the mind of Git. It will tell us what Git is thinking and the state of repository as Git sees it.
 The output of git status will change depending on if files have been added/deleted/modified, what's on the staging index, and the state of the repository
+
+#### ```git add```
+
+- we have some new files that we want Git to start tracking (create a new .html file)
+- for Git to track a file, it needs to be committed to the repository
+- for a file to be committed, it needs to be in the Staging Index
+- the git add command is used to move files from the Working Directory to the Staging Index
+
+Note: ```git add .``` moves all changed files to staging  (refers to all files)
+
+#### ```git commit```
+
+code editor will have to be configured ```$ git config --global core.editor <your-editor's-config-went-here>```
+
+Provide the commit msg
+
+**Bypass The Editor With The -m Flag**
+
+TIP: If the commit message is short and we don't want to wait for your code editor to open up to type it out, we can pass your message directly on the command line with the -m flag:
+
+```$ git commit -m "Initial commit"```
