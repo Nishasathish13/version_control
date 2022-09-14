@@ -83,3 +83,8 @@ Provide the commit msg
 TIP: If the commit message is short and we don't want to wait for your code editor to open up to type it out, we can pass your message directly on the command line with the -m flag:
 
 ```$ git commit -m "Initial commit"```
+
+#### ```git diff```
+
+The ```git diff``` command can be used to see changes that have been made but haven't been committed, yet.
+
