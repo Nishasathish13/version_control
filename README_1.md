@@ -88,3 +88,41 @@ TIP: If the commit message is short and we don't want to wait for your code edit
 
 The ```git diff``` command can be used to see changes that have been made but haven't been committed, yet.
 
+This command displays:
+
+- the files that have been modified
+- the location of the lines that have been added/removed
+- the actual changes that have been made
+
+#### ```git tag```
+
+The ```git tag -a v1``` is used to tag a certain commit, works like a book mark.
+
+-a means annotation, Annotated tags are recommended because they include a lot of extra information such as:
+
+the person who made the tag
+the date the tag was made
+a message for the tag
+
+A Git tag can be deleted with the -d flag (for delete!) and the name of the tag: ```git tag -d v1```
+
+Adding A Tag To A Past Commit: All we have to do is provide the SHA of the commit we want to tag!
+Eg: ```git tag -a v1.0 a87984```
+
+#### ```git branch```
+
+It can be used to:
+
+list all branch names in the repository
+create new branches
+delete branches
+
+Create a branch by ```git branch name_of_branch```
+
+To switch between branchs ```git checkout name_of_branch_to_switched_to```
+
+to delete a branch post merging ```git branch -d name_of_branch_to_delete```
+
+
+
+
